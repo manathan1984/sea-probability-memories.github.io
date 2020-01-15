@@ -23,12 +23,12 @@
     </div>
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Call for Papers</a></li>
-            <li><a href="#">Submission Guidelines</a></li>
-            <li><a href="#">Program Committee</a></li>
-            <li><a href="#">Accepted Papers</a></li>
-			<li><a href="/" class="bordered">Submission Page</a></li>
+            <li><a href="#pc">Program Committee</a></li>
+<!--            <li><a href="#">Accepted Papers</a></li>-->
+<!--            <li><a href="#">Program</a></li>-->
+<!--            <li><a href="#">Registration</a></li>-->
+            <li><a href="#dates">Important Dates</a></li>
+			<li><a href="#submission" class="bordered">Paper Submission</a></li>
         </ul>
     </nav>
 </header>
@@ -36,7 +36,7 @@
 <div id="content">
     <section class="row">
         <div class="col-full">
-            <h2>Overview</h2>
+            <h2>Overview / Call for Papers</h2>
             <p>The focus of the GRADES-NDA workshop is the application areas, usage scenarios and open challenges in
                 managing large-scale graph-shaped data. The workshop is a forum for exchanging ideas and methods for
                 mining, querying and learning with real-world network data, developing new common understandings of the
@@ -57,12 +57,31 @@
                 Social Networks, Biological Network Data, Marketing and Media, Business Data Analysis, Healthcare Data,
                 Cybersecurity etc.
             </p>
+            <p>Topics of interest include but are not limited to the following.</p>
+            <ul>
+                <li> Graph query languages, visualization techniques and querying interfaces, and their effective realization</li>
+                <li>Graph platform and parallel platforms,  e.g., Flink/Gelly, Titan, SPARK/GraphX, GraphLab/PowerGraph, Giraph, GraphChi etc.</li>
+                <li>Network data representation, storage, indexing and querying methods.</li>
+                <li>Experiences or techniques for graph specific operations such as traversals or inference/reasoning in the context of large data sets and on the systems that implement those operations.</li>
+                <li>RDF data management and analytics</li>
+                <li>Dynamic Graphs: managing graph updates; graph stream analytics; analyzing evolution and detection of community structures in real-world evolving graphs</li>
+                <li>Mining and machine learning on heterogeneous networks -- knowledge graphs etc.</li>
+                <li>Graph summarization and sampling</li>
+                <li>Game Theory, Social contagion and Information propagation on networks</li>
+                <li>Analytics on dirty, noisy, or uncertain graphs</li>
+                <li>Spatial and temporal graph analytics</li>
+                <li>Analytics on social, biological, retail, marketing, customer care, financial, healthcare, transportation network data sets</li>
+                <li> Descriptions of graph data management use cases and query workloads, and experiences with applying data management technologies in such situations</li>
+                <li>Vision and systems papers describing potential or real applications and benefits of graph management</li>
+            </ul>
+            <br>
+            <p>GRADES-NDA is in its third edition, and had successful joint meetings collocated with SIGMOD/PODS 2018 and 2019 respectively. Specifically, it is the merger of the GRADES and NDA workshops, which were each independently organized and successfully held at previous SIGMOD-PODS meetings, GRADES since 2013 and NDA since 2016. The organizers of GRADES and NDA mutually agreed upon to aim for a joint meeting from 2018 onwards.</p>
         </div>
     </section>
 
 	<section class="row">
 		<div class="col">
-			<h2>Important Dates</h2>
+			<h2><a id="dates"></a>Important Dates</h2>
 			<ul>
 				<li>Abstract Submission: March 9, 2020</li>
 				<li>Paper Submission: March 16, 2020</li>
@@ -89,11 +108,82 @@
 		</div>
 	</section>
 
-	<section class="row">
-		<div class="col-full">
-			<h2>Sponsors</h2>
-		</div>
-	</section>
+
+
+    <section class="row">
+        <div class="col-full">
+            <h2><a id="submission"></a>Paper Submission</h2>
+            <p>Authors are invited to submit original, unpublished research papers (full and short), demonstrations and case-studies. </p>
+            <p>Submissions must follow the latest 2-column ACM Master article "sigconf" proceedings LaTeX <a href="https://www.acm.org/binaries/content/assets/publications/consolidated-tex-template/acmart-master.zip"> template</a>, and should be double-blind. Details on the Anonymity requirements for submitted manuscripts are present at the <a href="https://sigmod2020.org/calls_papers_sigmod_research.shtml">SIGMOD 2020 Call for Papers page</a>.
+            </p>
+            <p>Length Requirements:</p>
+            <ul>
+                <li>Full papers should be a maximum of 8 pages in length, excluding references and appendix.</li>
+                <li>Case studies should be a maximum of 4 pages in length, excluding references and appendix.</li>
+                <li>Short papers and demonstration papers should be a maximum of 4 pages in length, excluding references and appendix.</li>
+            </ul>
+            <br>
+            <p>Submissions will be handled through Easychair. To submit click <a href="https://easychair.org/conferences/?conf=gradesnda2020">here</a>.</p>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="col-full">
+            <h2><a id="pc"></a>Program Committee</h2>
+            <ul>
+                <li>Renzo Angles, Universidad de Talca</li>
+                <li>Marcelo Arenas, PUC Chile</li>
+                <li>Alex Averbuch, Neo4j</li>
+                <li>Amitabha Bagchi, Indian Institute of Technology, Delhi</li>
+                <li>Srikanta Bedathur, Indian Institute of Technology, Delhi</li>
+                <li>Peter Boncz, CWI</li>
+                <li>Yang Cao, The University of Edinburgh </li>
+                <li>Vijil Chenthamarakshan, IBM T.J. Watson Research Center</li>
+                <li>Edith Cohen, Google Research</li>
+                <li>Mahashweta Das, Visa Research </li>
+                <li>Gautam Das, University of Texas, Arlington</li>
+                <li>Amol Deshpande, University of Maryland, College Park</li>
+                <li>Sourav Dutta, Bell Labs, Ireland</li>
+                <li>Amr El Abbadi, University of California, Santa Barbara</li>
+                <li>Irini Fundulaki, ICS-Forth </li>
+                <li>Sainyam Galhotra, UMass Amherst</li>
+                <li>Niloy Ganguly, Indian Institute of Technology, Kharagpur</li>
+                <li>Alberto Garcia-Duran, EPFL</li>
+                <li>Kiran Garimella, MIT </li>
+                <li>Ricard Gavaldà , UPC Barcelona</li>
+                <li>Joan Guisado-Gámez, UPC Barcelona </li>
+                <li>Jiawei Han, University of Illinois Urbana-Champaign </li>
+                <li>Jan Hidders, VU Brussels</li>
+                <li>H.V. Jagadish, University of Michigan, Ann Arbor</li>
+                <li>Vasiliki Kalavri, ETH Zurich </li>
+                <li>Georgia Koutrika, Athena Research Centre, Greece </li>
+                <li>Josep Lluís Larriba-Pey, UPC Barcelona</li>
+                <li>Marcus Paradies, DLR </li>
+                <li>Arnau Prat-Pérez, Sparsity</li>
+                <li>Maya Ramanath, Indian Institute of Technology, Delhi </li>
+                <li>Sayan Ranu, Indian Institute of Technology, Delhi</li>
+                <li>Shourya Roy, American Express Big Data Labs</li>
+                <li>Juan Sequeda, Capsenta Labs</li>
+                <li>Yogesh Simmhan, Indian Institute of Science, Bangalore</li>
+                <li>Aditya Telang, American Express Big Data Labs</li>
+                <li>Martin Theobald, University of Luxembourg</li>
+                <li>Laks V.S. Lakshmanan, The University of British Columbia</li>
+                <li>Ana Lucia Varbanescu, VU Amsterdam</li>
+                <li>Hannes Voigt, Neo4j</li>
+                <li>Tianxing Wu, Nanyang Technological University</li>
+                <li>Yinghui Wu, Washington State University</li>
+                <li>Yinglong Xia, Huawei Research</li>
+                <li>Xifeng Yan, University of California Santa Barbara</li>
+                <li>Oskar van Rest, Oracle</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="col-full">
+            <h2>Sponsored by</h2>
+        </div>
+    </section>
 
     <section class="row">
         <div class="col-full-b">
@@ -103,8 +193,6 @@
             </p>
         </div>
     </section>
-
-
 
 </div>
 
