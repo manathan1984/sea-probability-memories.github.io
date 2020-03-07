@@ -397,9 +397,10 @@ header #logo-container #subtitle {
 header #title-container {
   float: left;
   display: block;
-  margin-right: 2.3576515979%;
-  width: 65.8807828007%;
-  padding-top: 1.5em;
+  /*margin-right: 2.3576515979%;*/
+  margin-right: 0%;
+  width: 100%;
+  padding-top: 0.25em;
   color: #193c65;
   font-weight: bold;
   font-size: 30px;
@@ -420,6 +421,17 @@ header #title-container {
 header #title-container:last-child {
   margin-right: 0;
 }
+header #subtitle-container {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  /*margin-right: 0%;*/
+  width: 100%;
+  padding-top: 0.5em;
+  color: #193c65;
+  font-size: 25px;
+  text-align: left;
+}
 header a {
   color: #193c65;
   text-decoration: none;
@@ -439,6 +451,7 @@ header nav {
   display: block;
   margin-right: 2.3576515979%;
   width: 95.7350978501%;
+  border-top: 2px solid #4c5358;
 }
 header nav:last-child {
   margin-right: 0;
@@ -574,8 +587,8 @@ header nav ul li a.bordered {
   display: block;
   margin-right: 2.3576515979%;
   width: 48.821174201%;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 #content section.row .col:last-child, #content section.row .col-full:last-child {
   margin-right: 0;
