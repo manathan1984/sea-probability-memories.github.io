@@ -67,11 +67,24 @@ header {
 			font-size: 20px;
 		}
 
-		@include span-columns(8);
-		padding-top: 1.5em;
+		@include span-columns(12);
+		padding-top: 0.25em;
 		color: $base-accent-color;
 		font-weight: bold;
 		font-size: 30px;
+		text-align: left;
+	}
+
+
+	#subtitle-container {
+		float: left;
+		display: block;
+		margin-right: 2.3576515979%;
+		/* margin-right: 0%; */
+		width: 100%;
+		padding-top: 0.5em;
+		color: #193c65;
+		font-size: 25px;
 		text-align: left;
 	}
 
@@ -92,6 +105,7 @@ header {
 	}
 
 	nav {
+		border-top: 2px solid #4c5358;
 		text-align: center;
 		@include span-columns(11.5);
 
@@ -201,10 +215,59 @@ header {
 		.col,.col-full {
 			@include span-columns(6);
 			//border-top: $section-border;
-			padding-top: 1em;
-			padding-bottom: 1em;
+			padding-top: 0.5em;
+			padding-bottom: 0.5em;
+
 			ul {
 				padding-left: 1em;
+			}
+
+			.separator {
+				display: flex;
+				align-items: center;
+				text-align: center;
+				color: #999999;
+				font-style: italic;
+			}
+			.separator::before, .separator::after {
+				content: '';
+				flex: 1;
+				border-bottom: 1px solid #a0a0a0;
+			}
+			.separator::before {
+				margin-right: .25em;
+			}
+			.separator::after {
+				margin-left: .25em;
+			}
+
+			p.session {
+				margin-top: 1em;
+			}
+			span.time {
+				width: 15ex;
+				text-align: left;
+				font-weight: lighter;
+			}
+			span.authors {
+				display: block;
+				//font-size: smaller;
+			}
+			span.title {
+				display: block;
+				font-weight: bold;
+			}
+			span.stitle {
+				//display: block;
+				//font-weight: bold;
+			}
+			span.toggle {
+				font-size: 10pt;
+				display: block;
+				cursor: pointer;
+			}
+			span.toggle:hover {
+				text-decoration: underline;
 			}
 			
 			@include media($mobile) {
