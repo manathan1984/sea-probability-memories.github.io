@@ -257,9 +257,30 @@ header {
 				display: block;
 				font-weight: bold;
 			}
+			span.abstract {
+				margin-top: 1em;
+				display: block;
+				font-size: smaller;
+			}
+			span.bio {
+				margin-top: 1em;
+				display: block;
+				font-size: smaller;
+			}
+
+			#bio-pic {
+				float: right;
+				margin: 0 0 0 15px;
+			}
+
+			#bio-pic-2 {
+				float: right;
+				margin: 0 0 0 15px;
+			}
+
 			span.stitle {
 				//display: block;
-				//font-weight: bold;
+				font-weight: bold;
 			}
 			span.toggle {
 				font-size: 10pt;

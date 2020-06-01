@@ -628,6 +628,27 @@ header nav ul li a.bordered {
   display: block;
   font-weight: bold;
 }
+#content section.row .col span.abstract, #content section.row .col-full span.abstract {
+  margin-top: 1em;
+  display: block;
+  font-size: smaller;
+}
+#content section.row .col span.bio, #content section.row .col-full span.bio {
+  margin-top: 1em;
+  display: block;
+  font-size: smaller;
+}
+#content section.row .col #bio-pic, #content section.row .col-full #bio-pic {
+  float: right;
+  margin: 0 0 0 15px;
+}
+#content section.row .col #bio-pic-2, #content section.row .col-full #bio-pic-2 {
+  float: right;
+  margin: 0 0 0 15px;
+}
+#content section.row .col span.stitle, #content section.row .col-full span.stitle {
+  font-weight: bold;
+}
 #content section.row .col span.toggle, #content section.row .col-full span.toggle {
   font-size: 10pt;
   display: block;
