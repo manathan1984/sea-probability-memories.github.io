@@ -1,0 +1,551 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/vendor/fluidbox.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>GRADES-NDA 2020</title>
+</head>
+<body>
+
+<header>
+    <div class="photo-grid">
+        <a href="/"><img src="img/2020Sigmod-LOGO.png" alt="GRADES-NDA"></a>
+    </div>
+    <!--
+    <div id="logo-container">
+        <div id="logo"><a href="/"><img src="img/grades_nda_v3_twitter.png" alt="Example photo"></a></div>
+    </div>
+    -->
+    <div id="title-container"> Joint Workshop on Graph Data Management
+        Experiences & Systems (GRADES) and Network Data Analytics (NDA)
+    </div>
+    <div id="subtitle-container"> Co-located with <a href="http://sigmod2020.org/"> SIGMOD 2020 </a> (14 June 2020, Portland, OR, USA)
+    </div>
+    <div>
+        <a href="https://twitter.com/gradesnda?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @gradesnda</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a href="https://twitter.com/intent/tweet?button_hashtag=gradesnda20&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false" data-size="large">Tweet #gradesnda20</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#pc">Program Committee</a></li>
+<!--            <li><a href="#">Accepted Papers</a></li>-->
+<!--            <li><a href="#">Registration</a></li>-->
+            <li><a href="#dates">Important Dates</a></li>
+            <li><a href="#program" class="bordered">Program</a></li>
+<!--			<li><a href="#submission" class="bordered">Paper Submission</a></li>-->
+            <li><a href="#previous">Past Workshops</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+	   <li><a href="/toc.html">ACM OPENTOC</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div id="content">
+    <section class="row">
+        <div class="col-full">
+            <p><b>The video recording of the workshop is now available <a href="https://lake.videoken.com/gradesnda2020/">here</a>.</b>
+            </p>
+<!--	     <p><b>Update on the Technology to host GRADES-NDA online: We will be using a password protected Zoom link to hold the-->
+<!--		     GRADES-NDA. For the Zoom link and password please register at SIGMOD and log into SIGMOD's-->
+<!--		     website for participants (with your SIGMOD password), which contains a link for all the workshops and includes our Zoom link and password too.-->
+<!--		     If you have not registered at SIGMOD, you can also reach out to the chairs via <a href="mailto:gradesnda2020@easychair.org">email</a>.</b>-->
+<!--            </p>-->
+	    <br>
+            <p> The focus of the GRADES-NDA workshop is the application areas, usage scenarios and open challenges in
+                managing large-scale graph-shaped data. The workshop is a forum for exchanging ideas and methods for
+                mining, querying and learning with real-world network data, developing new common understandings of the
+                problems at hand, sharing of data sets and benchmarks where applicable, and leveraging existing
+                knowledge from different disciplines. Additionally, considering specific techniques (e.g., algorithms,
+                data/index structures) in the context of the systems that implement them, GRADES-NDA aims to present technical 
+                contributions inside graph, RDF, and other data management systems on graphs of a large size.
+            </p>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="col-full">
+            <h2>Keynote Speakers</h2>
+            <p> We are honored to have the following keynote speakers from different communities (Data Mining/Semantic Web/Databases) to talk about their exciting research in the broad field of graph data management.</p>
+            <ul>
+                <li><a href="http://web.cs.ucla.edu/~yzsun/">Yizhou Sun</a>&nbsp; UCLA</li>
+                <li><a href="http://katja-hose.de">Katja Hose</a>&nbsp; Aalborg University</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="col-full">
+            <h2><a id="program"></a>Program</h2>
+            <p style="color:gray"><i>All times are in PDT (Pacific Daylight Time, UTC/GMT -7 hours).</i></p>
+            <p class='session'>
+            <div class="separator"><b>Opening remarks bright and early at 8AM</b></div>
+            </p>
+            <p class='session'>
+                <span class='time'>8:10AM-9:00AM</span>
+                <span class='stitle'>Session 1: &nbsp; Graph learning and benchmarking</span>
+            </p>
+            <ul>
+                <li class='paper'>
+                    <span class='title'>Graph Learning with Loss-Guided Training</span>
+                    <span class='authors'>Eliav Buchnik and Edith Cohen</span>
+                </li>
+                <li class='paper'>
+                    <span class='title'>The Graph Based Benchmark Suite</span>
+                    <span class='authors'>Laxman Dhulipala, Jessica Shi, Tom Tseng, Guy Blelloch and Julian Shun</span>
+                </li>
+                <li class='paper'>
+                    <span class='title'>Supporting Dynamic Graphs and Temporal Entity Deletions in the LDBC Social Network Benchmark's Data Generator</span>
+                    <span class='authors'>Jack Waudby, Benjamin A. Steer, Arnau Prat-Pérez and Gábor Szárnyas</span>
+                </li>
+            </ul>
+            <p class='session'>
+            <div class="separator">Coffee break</div>
+            </p>
+            <p class='session'>
+                <span class='time'>9:15AM-10:15AM</span>
+                <span class='stitle'>Keynote: The Web of Data is partially unavailable, so what? - <i>Katja Hose</i></span><img src="img/katjahose.jpg" alt="" height="206" width="154" id="bio-pic" />
+                <span class='abstract'><b>Abstract:</b> More and more knowledge graphs are becoming available on the
+Web, many of them accessible via queryable interfaces, such as
+SPARQL endpoints. These knowledge graphs are often linked to
+each other and in doing so form the so-called Web of Data. The
+great strength and potential of exploiting these links is that we can
+obtain answers for queries that would not yield any results over the
+knowledge graphs if considered individually. However, one of the
+fundamental problems is that Web-accessible knowledge graphs
+are not always available when we would like to access them. This
+means that the exact same query issued at different points in time
+might have different results or, in the worst case, no results if one
+of the knowledge graphs that are essential to answer the query
+is (temporarily) not available. Often this is caused by crashes of
+the server hosting the knowledge graph – a problem that is deeply
+rooted within the architecture of the current Web of Data, i.e.,
+relying on data providers to keep interfaces and knowledge graphs
+available and accessible. Building upon the basics of federated query
+processing over knowledge graphs, this talk will discuss challenges
+as well as strategies on how to overcome the unavailability problem
+and keep the data available and queryable.</span>
+                <span class='bio'><b>Speaker bio:</b> Katja Hose is a Professor in the Department of Computer Science at Aalborg University. Prior to joining Aalborg University, she was a
+postdoc at the Max Planck Institute for Informatics in Saarbrücken,
+Germany, and earned her PhD in Computer Science from Ilmenau University of Technology, Germany. Her research is rooted
+in databases and Semantic Web technologies and spans theory,
+algorithms, and applications of Data and Web Science incl. knowledge querying, analyzing, publishing, and extracting. She has co-authored more than 90 peer-reviewed publications (including a few
+best paper and best paper runner-up awards). Katja Hose regularly
+serves as a reviewer for databases and Semantic Web conferences
+and journals (e.g., VLDB, SIGMOD, TheWebConf/WWW, ISWC,TKDE, DAPD). She has served in many different roles as (co-)chair (workshop, senior PC, tutorials, posters, demos, publicity, proceedings) for a broad range of international conferences (e.g., VLDB, SIGMOD, ICDE, TheWebConf/WWW, ISWC).</span>
+            </p>
+            <p class='session'>
+            <div class="separator">Tea and cookies break</div>
+            </p>
+            <p class='session'>
+                <span class='time'>10:30AM-11:25AM</span>
+                <span class='stitle'>Session 2: &nbsp; Graph analysis and pattern matching</span>
+            </p>
+            <ul>
+                <li class='paper'>
+                    <span class='title'>ELite: Cost-effective Approximation of Exploration-based Graph Analysis</span>
+                    <span class='authors'>Xiaofei Zhang, Tamer Ozsu and Lei Chen</span>
+                </li>
+                <li class='paper'>
+                    <span class='title'>EdgeFrame: Worst-Case Optimal Joins for Graph-Pattern Matching in Spark</span>
+                    <span class='authors'>Per Fuchs, Peter Boncz and Bogdan Ghit</span>
+                </li>
+                <li class='paper'>
+                    <span class='title'>Towards Interactive Pattern Search in Massive Graphs</span>
+                    <span class='authors'>Tahsin Reza, Matei Ripeanu, Geoffrey Sanders and Roger Pearce</span>
+                </li>
+            </ul>
+            <p class='session'>
+            <div class="separator">Snack break</div>
+            </p>
+            <p class='session'>
+                <span class='time'>11:40AM-12:40PM</span>
+                <span class='stitle'>Keynote: Graph Neural Networks for Graph Search - <i>Yizhou Sun</i></span><img src="img/sun.jpg" alt="" width="291" height="194" id="bio-pic-2" />
+                <span class='abstract'><b>Abstract:</b> Graph neural networks (GNNs) have received more and more attention in past several years, due to the wide applications of graphs
+and networks, and the superiority of their performance compared
+to traditional heuristics-driven approaches. However, most existing
+GNNs still focus on node-level applications, such as node classification and link prediction, and many challenging graph tasks are
+graph-level, such as graph search. In this talk, I will introduce our
+recent progress on graph-level neural operator development. In
+particular, we will examine three challenging tasks that are key
+to the success of graph search: (1) How can we conduct efficient
+graph similarity search by turning the NP-Complete problems, such
+as the Graph Edit Distance (GED) and Maximum Common Sub-graph (MCS) computation, into a learning problem? We will present
+SimGNN and GraphSim that are able to provide more efficient and effective results compared to state-of-the-art approximate
+algorithms. (2) How can we provide a neural operator that can turn
+any graph into a low dimensional representation vector, which is
+learnable, inductive, and unsupervised? In this line, we propose
+UGraphEmd that is able to leverage graph-graph interaction
+to produce manifold-preserving graph-level embedding. Moreover,
+GHashing is designed to map each graph to a discrete hash code,
+which enables a much more efficient search (20 times speed up) to
+handle large graph database with millions of graphs. And (3) how
+can we design GNNs that can directly detect the best matched sub-
+graphs of two graphs? A deep reinforcement learning framework
+RLMCS is then proposed to address this issue, with the goal
+to learn the best strategy to pick the next matching pair for two
+graphs. In the end, we will provide some discussions to the open
+questions in the field.</span>
+                <span class='bio'><b>Speaker bio:</b> Yizhou Sun is an associate professor at department of computerscience of UCLA. Prior to that, she was an assistant professor in
+the College of Computer and Information Science of Northeast-
+ern University. She received her Ph.D. in Computer Science from
+the University of Illinois at Urbana-Champaign in 2012. Her principal research interest is on mining graphs/networks, and more
+generally in data mining, machine learning, and network science,
+with a focus on modeling novel problems and proposing scalable
+algorithms for large-scale, real-world applications. She is a pioneer
+researcher in mining heterogeneous information network, with
+a recent focus on deep learning on graphs/networks. Yizhou has
+over 100 publications in books, journals, and major conferences.
+Tutorials of her research have been given in many premier conferences. She received 2012 ACM SIGKDD Best Student Paper Award,
+2013 ACM SIGKDD Doctoral Dissertation Award, 2013 Yahoo ACE
+(Academic Career Enhancement) Award, 2015 NSF CAREER Award,
+2016 CS@ILLINOIS Distinguished Educator Award, 2018 Amazon
+Research Award, and 2019 Okawa Foundation Research Grant.</span>
+            </p>
+            <p class='session'>
+            <div class="separator">Lunch</div>
+            </p>
+            <p class='session'>
+                <span class='time'>1:35PM-2:30PM</span>
+                <span class='stitle'>Session 3: &nbsp; Potpourri</span>
+            </p>
+            <ul>
+                <li class='paper'>
+                    <span class='title'>Smooth Kronecker: Solving the Combing Problem in Kronecker Graphs</span>
+                    <span class='authors'>Vaastav Anand, Puneet Mehrotra, Daniel Margo and Margo Seltzer</span>
+                </li>
+                <li class='paper'>
+                    <span class='title'>Context-Free Path Querying with Single-Path Semantics by Matrix Multiplication</span>
+                    <span class='authors'>Rustam Azimov, Semyon Grigorev, Artem Khoroshev and Arseniy Terekhov</span>
+                </li>
+                <li class='paper'>
+                    <span class='title'>A Framework for DSL-Based Query Classification Using Relational and Graph-Based Data Models</span>
+                    <span class='authors'>Peter K. Schwab, Maximilian Langohr and Klaus Meyer-Wegener</span>
+                </li>
+            </ul>
+            <p class='session'>
+                <div class="separator">Sugar and caffeine break</div>
+            </p>
+            <p class='session'>
+                <span class='time'>2:45PM-3:45PM</span>
+                <span class='stitle'>Industrial talks</span>
+            </p>
+            <ul>
+                <li class='paper'>
+                    <span class='title'>Working with property graphs using SAP HANA</span>
+                    <span class='authors'>SAP</span>
+                </li>
+                <li class='paper'>
+                    <span class='title'>Graph Data Science with Neo4j</span>
+                    <span class='authors'>Neo Technology</span>
+                </li>
+                <li class='paper'>
+                    <span class='title'>IBM Db2 Graph: Synergistic and Retrofittable Graph Queries inside IBM Db2</span>
+                    <span class='authors'>IBM</span>
+                </li>
+                <li class='paper'>
+                    <span class='title'>Modern Aggregation Support in TigerGraph</span>
+                    <span class='authors'>Alin Deutsch, TigerGraph</span>
+                </li>
+                <li class='paper'>
+                    <span class='title'>Graph Applications and Systems in Alibaba</span>
+                    <span class='authors'>Alibaba</span>
+                </li>
+            </ul>
+            <p class='session'>
+            <div class="separator">Social break</div>
+            </p>
+            <p class='session'>
+                <span class='time'>4:00PM-5:00PM</span>
+                <span class='stitle'>Free-roam posters and demos</span>
+            </p>
+            <p>Demos:</p>
+            <ul>
+                <li class='paper'>
+                    <span class='title'>Addressing graph worflows using SAP HANA</span>
+                    <span class='authors'>SAP</span>
+                </li>
+                <li class='paper'>
+                    <span class='title'>Hands on: using Neo4j's Graph Data Science Library</span>
+                    <span class='authors'>Neo Technology</span>
+                </li>
+                <li class='paper'>
+                    <span class='title'>Supporting Synergistic and Retrofittable Graph Queries using IBM Db2 Graph</span>
+                    <span class='authors'>IBM</span>
+                </li>
+                <li class='paper'>
+                    <span class='title'>Why You Should Train Large Graph Convolutional Network (GCN) In A Graph Database - a GCN demo in TigerGraph</span>
+                    <span class='authors'>Changran Liu, TigerGraph</span>
+                </li>
+                <li class='paper'>
+                    <span class='title'>The Graph Based Benchmark Suite</span>
+                    <span class='authors'>Laxman Dhulipala, Jessica Shi, Tom Tseng, Guy Blelloch and Julian Shun</span>
+                </li>
+                <li class='paper'>
+                    <span class='title'>A Framework for DSL-Based Query Classification Using Relational and Graph-Based Data Models</span>
+                    <span class='authors'>Peter K. Schwab, Maximilian Langohr and Klaus Meyer-Wegener</span>
+                </li>
+            </ul>
+            <br>
+            <p>Posters:</p>
+            <ul>
+                <li class='paper'>
+                    <span class='title'>Graph Learning with Loss-Guided Training</span>
+                    <span class='authors'>Eliav Buchnik and Edith Cohen</span>
+                </li>
+                <li class='paper'>
+                    <span class='title'>Supporting Dynamic Graphs and Temporal Entity Deletions in the LDBC Social Network Benchmark's Data Generator</span>
+                    <span class='authors'>Jack Waudby, Benjamin A. Steer, Arnau Prat-Pérez and Gábor Szárnyas</span>
+                </li>
+                <li class='paper'>
+                    <span class='title'>ELite: Cost-effective Approximation of Exploration-based Graph Analysis</span>
+                    <span class='authors'>Xiaofei Zhang, Tamer Ozsu and Lei Chen</span>
+                </li>
+                <li class='paper'>
+                    <span class='title'>EdgeFrame: Worst-Case Optimal Joins for Graph-Pattern Matching in Spark</span>
+                    <span class='authors'>Per Fuchs, Peter Boncz and Bogdan Ghit</span>
+                </li>
+                <li class='paper'>
+                    <span class='title'>Towards Interactive Pattern Search in Massive Graphs</span>
+                    <span class='authors'>Tahsin Reza, Matei Ripeanu, Geoffrey Sanders and Roger Pearce</span>
+                </li>
+                <li class='paper'>
+                    <span class='title'>Smooth Kronecker: Solving the Combing Problem in Kronecker Graphs</span>
+                    <span class='authors'>Vaastav Anand, Puneet Mehrotra, Daniel Margo and Margo Seltzer</span>
+                </li>
+                <li class='paper'>
+                    <span class='title'>Context-Free Path Querying with Single-Path Semantics by Matrix Multiplication</span>
+                    <span class='authors'>Rustam Azimov, Semyon Grigorev, Artem Khoroshev and Arseniy Terekhov</span>
+                </li>
+            </ul>
+            <p class='session'>
+            <div class="separator"><b>Closing remarks and virtual drinks</b></div>
+            </p>
+
+        </div>
+    </section>
+
+
+    <section class="row">
+        <div class="col-full">
+            <h2>Call for Papers</h2>
+            <p> The goal of GRADES-NDA is to bring together researchers from academia, industry, and government, (1) to
+                create a forum for discussing recent advances in (large-scale) graph data management and analytics
+                systems, as well as propose and discuss novel methods and techniques towards (2) addressing domain
+                specific challenges or (3) handling noise in real-world graphs.</p>
+            <p>The workshop will be of interest to researchers in the development of novel data-management applications
+                and systems for large-scale graph analytics. More specifically, the intended audience are, but not
+                limited to, academic and industrial computer scientists interested in databases and data mining, machine
+                learning, data streaming, graph theory and algorithms. Along with novel research work, we encourage
+                submissions with demonstrations and case studies from real-life experiences in various domains such as
+                Social Networks, Biological Network Data, Marketing and Media, Business Data Analysis, Healthcare Data,
+                Cybersecurity etc.
+            </p>
+            <p>Topics of interest include but are not limited to the following.</p>
+            <ul>
+                <li>Graph query languages, visualization techniques and querying interfaces, and their effective realization</li>
+                <li>Graph platform and parallel platforms,  e.g., Flink/Gelly, Titan, SPARK/GraphX, GraphLab/PowerGraph, Giraph, GraphChi etc.</li>
+                <li>Network data representation, storage, indexing and querying methods.</li>
+                <li>Experiences or techniques for graph specific operations such as traversals or inference/reasoning in the context of large data sets and on the systems that implement those operations.</li>
+                <li>RDF data management and analytics</li>
+                <li>Dynamic Graphs: managing graph updates; graph stream analytics; analyzing evolution and detection of community structures in real-world evolving graphs</li>
+                <li>Mining and machine learning on heterogeneous networks -- knowledge graphs etc.</li>
+                <li>Graph summarization and sampling</li>
+                <li>Game Theory, Social contagion and Information propagation on networks</li>
+                <li>Analytics on dirty, noisy, or uncertain graphs</li>
+                <li>Spatial and temporal graph analytics</li>
+                <li>Analytics on social, biological, retail, marketing, customer care, financial, healthcare, transportation network data sets</li>
+                <li> Descriptions of graph data management use cases and query workloads, and experiences with applying data management technologies in such situations</li>
+                <li>Vision and systems papers describing potential or real applications and benefits of graph management</li>
+            </ul>
+            <br>
+            <p> Accepted papers will be published by ACM, indexed by DBLP, and would be available in the ACM DL.</p>
+        </div>
+    </section>
+
+	<section class="row">
+		<div class="col">
+			<h2><a id="dates"></a>Important Dates</h2>
+			<ul>
+				<li>Paper Submission: <strike>March 23</strike> April 6, 2020</li>
+				<li>Notifications: <strike>April 13</strike> April 27, 2020</li>
+				<li>Camera Ready Submission: <strike>April 27</strike> May 11, 2020</li>
+				<li>Workshop Date: June 14, 2020</li>
+			</ul>
+			<p></p>
+			<i>All deadlines are 23:59 Hours AoE</i>
+            <p></p>
+            <i> We are aware that many people are trying to adapt to a new and challenging life circumstances due to the global spread of COVID-19. To accommodate for this, we decided to extend the GRADES-NDA submission and review deadlines by 2 weeks.</i>
+		</div>
+		<div class="col">
+			<h2>Workshop Organizers</h2>
+			<ul>
+				<li><a href="https://dlab.epfl.ch/people/aarora/">Akhil Arora</a>, EPFL</li>
+				<li><a href="https://cs.uwaterloo.ca/~ssalihog/">Semih Salihoglu</a>, University of Waterloo</li>
+				<li><a href="https://www.tue.nl/en/research/researchers/nikolay-yakovets/">Nikolay Yakovets</a>, TU Eindhoven</li>
+			</ul><br>
+			<h2>Steering Committee</h2>
+			<ul>
+				<li><a href="https://www.cse.iitk.ac.in/users/arnabb/">Arnab Bhattacharya</a>, IIT Kanpur</li>
+                <li><a href="http://eliassi.org/">Tina Eliassi-Rad</a>, Northeastern University</li>
+				<li><a href="https://www.win.tue.nl/~gfletche/">George Fletcher</a>, TU Eindhoven</li>
+			</ul>
+		</div>
+	</section>
+
+    <section class="row">
+        <div class="col-full">
+            <h2><a id="submission"></a>Paper Submission</h2>
+            <p>Authors are invited to submit original, unpublished research papers (full and short), demonstrations and case-studies. </p>
+            <p>Submissions must follow the latest 2-column ACM Master article "sigconf" proceedings LaTeX <a href="https://www.acm.org/binaries/content/assets/publications/consolidated-tex-template/acmart-master.zip"> template</a> with 10pt font size, and should be double-blind. Details on the Anonymity requirements for submitted manuscripts are present at the <a href="https://sigmod2020.org/calls_papers_sigmod_research.shtml">SIGMOD 2020 Call for Papers page</a>.
+            </p>
+            <p>Length Requirements:</p>
+            <ul>
+                <li>Full papers should be a maximum of 8 pages in length, excluding references and appendix.</li>
+                <li>Case studies should be a maximum of 4 pages in length, excluding references and appendix.</li>
+                <li>Short papers and demonstration papers should be a maximum of 4 pages in length, excluding references and appendix.</li>
+            </ul>
+            <br>
+            <p>Submissions will be handled through Easychair. To submit click <a href="https://easychair.org/conferences/?conf=gradesnda2020">here</a>.</p>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="col-full">
+            <h2><a id="pc"></a>Program Committee</h2>
+            <ul>
+                <li>Renzo Angles, Universidad de Talca</li>
+                <li>Marcelo Arenas, PUC Chile</li>
+                <li>Alex Averbuch, Neo4j</li>
+                <li>Amitabha Bagchi, Indian Institute of Technology, Delhi</li>
+                <li>Srikanta Bedathur, Indian Institute of Technology, Delhi</li>
+                <li>Peter Boncz, CWI</li>
+                <li>Yang Cao, The University of Edinburgh </li>
+                <li>Edith Cohen, Google Research</li>
+                <li>Mahashweta Das, Visa Research </li>
+                <li>Sourav Dutta, Bell Labs, Ireland</li>
+                <li>Irini Fundulaki, ICS-Forth </li>
+                <li>Sainyam Galhotra, UMass Amherst</li>
+                <li>Alberto Garcia-Duran, EPFL</li>
+                <li>Kiran Garimella, MIT </li>
+                <li>Ricard Gavaldà , UPC Barcelona</li>
+                <li>Joan Guisado-Gámez, UPC Barcelona </li>
+                <li>Jiawei Han, University of Illinois Urbana-Champaign </li>
+                <li>Russ Harmer, CNRS & ENS Lyon </li>
+                <li>Jan Hidders, VU Brussels</li>
+                <li>Vasiliki Kalavri, Boston University </li>
+                <li>Panos Kalnis, King Abdullah University of Science and Technology </li>
+                <li>Josep Lluís Larriba-Pey, UPC Barcelona</li>
+                <li>Essam Mansour, Concordia University</li>
+                <li>Marcus Paradies, DLR </li>
+                <li>Arnau Prat-Pérez, Sparsity</li>
+                <li>Maya Ramanath, Indian Institute of Technology, Delhi </li>
+                <li>Sayan Ranu, Indian Institute of Technology, Delhi</li>
+                <li>Erdem Sariyuce, University at Buffalo</li>
+                <li>Juan Sequeda, Capsenta Labs</li>
+                <li>Julian Shun, MIT</li>    
+                <li>Yogesh Simmhan, Indian Institute of Science, Bangalore</li>
+                <li>Andreas Spitz, Ecole Polytechnique Fédérale de Lausanne</li>    
+                <li>Gábor Szárnyas, Budapest University of Technology and Economics</li>		    
+                <li>Martin Theobald, University of Luxembourg</li>
+                <li>Enara Vijil, IBM</li>
+                <li>Hannes Voigt, Neo4j</li>
+                <li>Tianxing Wu, Nanyang Technological University</li>
+                <li>Yinghui Wu, Washington State University</li>
+                <li>Yinglong Xia, Facebook Research</li>
+                <li>Oskar van Rest, Oracle</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="row">
+        <h2 id="previous">Past Workshops</h2>
+        <p>GRADES-NDA is in its third edition, and had successful joint meetings collocated with SIGMOD/PODS 2018 and 2019 respectively. Specifically, it is the merger of the GRADES and NDA workshops, which were each independently organized and successfully held at previous SIGMOD-PODS meetings, GRADES since 2013 and NDA since 2016. The organizers of GRADES and NDA mutually agreed upon to aim for a joint meeting from 2018 onwards.</p>
+        <div class="col">
+            <h2>GRADES-NDA</h2>
+            <ul>
+                <li><a href="https://sites.google.com/site/gradesnda2019/">GRADES-NDA 2019</a></li>
+                <li><a href="https://sites.google.com/site/gradesnda2018/">GRADES-NDA 2018</a></li>
+            </ul><br>
+            <h2>NDA</h2>
+            <ul>
+                <li><a href="https://sites.google.com/site/networkdataanalytics2017/">NDA 2017</a></li>
+                <li><a href="https://sites.google.com/site/networkdataanalytics2016/">NDA 2016</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h2>GRADES</h2>
+            <ul>
+                <li><a href="https://event.cwi.nl/grades/2017/index.shtml">GRADES 2017</a></li>
+                <li><a href="https://event.cwi.nl/grades/2016/index.shtml">GRADES 2016</a></li>
+                <li><a href="https://event.cwi.nl/grades/2015/index.shtml">GRADES 2015</a></li>
+                <li><a href="https://event.cwi.nl/grades/2014/index.shtml">GRADES 2014</a></li>
+                <li><a href="https://event.cwi.nl/grades/2013/index.shtml">GRADES 2013</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="col-full">
+            <h2 id="sponsors">Sponsored by</h2>
+            <div class="photo-grid">
+                <a href="https://neo4j.com/" class="col-3"><img src="img/neo4j-logo.png" alt="Neo4j"></a>
+                <a href="https://www.tigergraph.com/" class="col-3"><img src="img/tigergraph-logo.png" alt="TigerGraph"></a>
+                <a href="https://damo.alibaba.com/" class="col-3"><img src="img/alibaba-logo.png" alt="Alibaba"></a>
+            </div>
+            <div class="photo-grid">
+                <a href="https://www.research.ibm.com/" class="col-3"><img src="img/ibm-logo.png" alt="IBM"></a>
+                <a href="https://www.sap.com/index.html" class="col-3"><img src="img/sap-logo.png" alt="SAP"></a>
+                <a href="https://www.google.com/" class="col-3"><img src="img/google.png" alt="GOOGLE"></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="col-full-b">
+            <h2>Get in touch</h2>
+            <p>
+                For questions, please <a href="mailto:gradesnda2020@easychair.org">email</a>. Follow us on <a href="https://twitter.com/gradesnda">Twitter</a> for latest updates about the workshop.
+            </p>
+        </div>
+    </section>
+
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+    if (!window.jQuery) {
+        document.write('<script src="js/vendor/jquery.1.11.min.js"><\/script>');
+    }
+</script>
+
+<script src="js/vendor/jquery.fluidbox.min.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'YOUR_GOOGLE_ANALYTICS_ID', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
+
+<!-- © 2014 - Based on free website template by <a href="http://www.pixelsbyrick.com">Rick Waalders</a> -->
