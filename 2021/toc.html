@@ -1,0 +1,443 @@
+<html xmlns:bkstg="http://www.atypon.com/backstage-ns" xmlns:urlutil="java:com.atypon.literatum.customization.UrlUtil" xmlns:pxje="java:com.atypon.frontend.services.impl.PassportXslJavaExtentions">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="Content-Style-Type" content="text/css"><style type="text/css">
+            #DLtoc {
+            font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+            }
+
+            #DLheader {
+            }
+            #DLheader h1 {
+            font-size:16px;
+            }
+
+            #DLcontent {
+            font-size:12px;
+            }
+            #DLcontent h2 {
+            font-size:14px;
+            margin-bottom:5px;
+            }
+            #DLcontent h3 {
+            font-size:12px;
+            padding-left:20px;
+            margin-bottom:0px;
+            }
+
+            #DLcontent ul{
+            margin-top:0px;
+            margin-bottom:0px;
+            }
+
+            .DLauthors li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLauthors li:after{
+            content:",";
+            }
+            .DLauthors li.nameList.Last:after{
+            content:"";
+            }
+
+            .DLabstract {
+            padding-left:40px;
+            padding-right:20px;
+            display:block;
+            }
+
+            .DLformats li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLformats li:after{
+            content:",";
+            }
+            .DLformats li.formatList.Last:after{
+            content:"";
+            }
+
+            .DLlogo {
+            vertical-align:middle;
+            padding-right:5px;
+            border:none;
+            }
+
+            .DLcitLink {
+            margin-left:20px;
+            }
+
+            .DLtitleLink {
+            margin-left:20px;
+            }
+
+            .DLotherLink {
+            margin-left:0px;
+            }
+
+        </style><title>GRADES-NDA'20: Proceedings of the 3rd Joint International Workshop on Graph Data Management Experiences
+         &amp; Systems (GRADES) and Network Data Analytics (NDA)
+      </title>
+   </head>
+   <body>
+      <div id="DLtoc">
+         <div id="DLheader">
+            <h1>GRADES-NDA'20: Proceedings of the 3rd Joint International Workshop on Graph Data Management Experiences
+               &amp; Systems (GRADES) and Network Data Analytics (NDA)
+            </h1><a class="DLcitLink" title="Go to the ACM Digital Library for additional information about this proceeding" href="https://dl.acm.org/doi/proceedings/10.1145/3398682"><img class="DLlogo" alt="Digital Library logo" height="30" src="https://dl.acm.org/specs/products/acm/releasedAssets/images/footer-logo1.png">
+               Full Citation in the ACM Digital Library
+               </a></div>
+         <div id="DLcontent">
+            <h2>SESSION: Keynote Talks</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3398682.3399159">Graph Neural Networks for Graph Search</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">Yizhou Sun</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Graph neural networks (GNNs) have received more and more attention in past several
+                     years, due to the wide applications of graphs and networks, and the superiority of
+                     their performance compared to traditional heuristics-driven approaches. However, most
+                     existing GNNs still focus on node-level applications, such as node classification
+                     and link prediction, and many challenging graph tasks are graph-level, such as graph
+                     search. In this talk, I will introduce our recent progress on graph-level neural operator
+                     development. In particular, we will examine three challenging tasks that are key to
+                     the success of graph search: (1) How can we conduct efficient graph similarity search
+                     by turning the NP-Complete problems, such as the Graph Edit Distance (GED) and Maximum
+                     Common Subgraph (MCS) computation, into a learning problem? We will present SimGNN
+                     [1] and GraphSim [3] that are able to provide more efficient and effective results
+                     compared to state-of-the-art approximate algorithms. (2) How can we provide a neural
+                     operator that can turn any graph into a low dimensional representation vector, which
+                     is learnable, inductive, and unsupervised? In this line, we propose UGraphEmd [2]
+                     that is able to leverage graph-graph interaction to produce manifold-preserving graph-level
+                     embedding. Moreover, GHashing [5] is designed to map each graph to a discrete hash
+                     code, which enables a much more efficient search (20 times speed up) to handle large
+                     graph database with millions of graphs. And (3) how can we design GNNs that can directly
+                     detect the best matched subgraphs of two graphs? A deep reinforcement learning framework
+                     RLMCS [4] is then proposed to address this issue, with the goal to learn the best
+                     strategy to pick the next matching pair for two graphs. In the end, we will provide
+                     some discussions to the open questions in the field.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3398682.3399160">The Web of Data is partially unavailable, so what?: Extended Abstract</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList Last">Katja Hose</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>More and more knowledge graphs are becoming available on the Web, many of them accessible
+                     via queryable interfaces, such as SPARQL endpoints. These knowledge graphs are often
+                     linked to each other and in doing so form the so-called Web of Data. The great strength
+                     and potential of exploiting these links is that we can obtain answers for queries
+                     that would not yield any results over the knowledge graphs if considered individually.
+                     However, one of the fundamental problems is that Web-accessible knowledge graphs are
+                     not always available when we would like to access them. This means that the exact
+                     same query issued at different points in time might have different results or, in
+                     the worst case, no results if one of the knowledge graphs that are essential to answer
+                     the query is (temporarily) not available. Often this is caused by crashes of the server
+                     hosting the knowledge graph - a problem that is deeply rooted within the architecture
+                     of the current Web of Data, i.e., relying on data providers to keep interfaces and
+                     knowledge graphs available and accessible. Building upon the basics of federated query
+                     processing over knowledge graphs, this talk will discuss challenges as well as strategies
+                     on how to overcome the unavailability problem and keep the data available and queryable.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Full Papers</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3398682.3399161">Smooth Kronecker: Solving the Combing Problem in Kronecker Graphs</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Vaastav Anand</li>
+               <li class="nameList">Puneet Mehrotra</li>
+               <li class="nameList">Daniel Margo</li>
+               <li class="nameList Last">Margo Seltzer</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Graphs and graph-processing have become increasingly important. This has led to an
+                     explosion in the development of graph-processing systems, each of which is evaluated
+                     relative to its predecessors. In the absence of a large corpus of real-world graphs,
+                     synthetic generators provide an easy way to construct graphs of varying sizes. The
+                     most widely used generator is the Kronecker generator. Unfortunately, the Kronecker
+                     generator was not designed to produce graphs for benchmarking and when used in this
+                     fashion, it is problematic in two ways. First, the fraction of zero-degree vertices
+                     scales with the graph size, dramatically reducing the effective size of the connected
+                     graph. Second, the generator produces a vertex degree distribution not found in real
+                     world settings. We demonstrate these phenomena and present the Smooth Kronecker Generator,
+                     which remedies the vertex degree distribution problem without changing the statistical
+                     properties of the graph.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3398682.3399162">EdgeFrame: Worst-Case Optimal Joins for Graph-Pattern Matching in Spark</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Per Fuchs</li>
+               <li class="nameList">Peter Boncz</li>
+               <li class="nameList Last">Bogdan Ghit</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>We describe the design and implementation of EdgeFrame: a graph-specialized Spark
+                     DataFrame that caches the edges of a graph in compressed form on all worker nodes
+                     of a cluster, and provides a fast and scalable Worst-Case-Optimal Join (WCOJ) that
+                     is especially useful for matching of complex and cyclical patterns in large graphs.
+                     Our choice to forego shuffle- or communication-based WCOJ is motivated by our analysis
+                     of the Shares algorithm for distributed WCOJ, that was proven communication-optimal,
+                     but which we show to quickly deteriorate to a full broadcast of all data already with
+                     moderately complex graph patterns. Our work shows that specializing WCOJ to a multi-way
+                     self-join, and leveraging compressed storage, provides a significant opportunity for
+                     better WCOJ performance. Finally, we investigate WCOJ parallelization and load-balancing
+                     strategies and show that fine-grained dynamic load-balancing with work-stealing is
+                     to be preferred, creating interesting insights and challenges for the future evolution
+                     of the Spark scheduler.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3398682.3399163">Context-Free Path Querying with Single-Path Semantics by Matrix Multiplication</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Arseniy Terekhov</li>
+               <li class="nameList">Artyom Khoroshev</li>
+               <li class="nameList">Rustam Azimov</li>
+               <li class="nameList Last">Semyon Grigorev</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>A recent study showed that the applicability of context-free path querying (CFPQ)
+                     algorithms with relational query semantics integrated with graph databases is limited
+                     because of low performance and high memory consumption of existing solutions. In this
+                     work, we implement a matrix-based CFPQ algorithm by using appropriate high-performance
+                     libraries for linear algebra and integrate it with RedisGraph graph database. Also,
+                     we introduce a new CFPQ algorithm with single-path query semantics that allows us
+                     to extract one found path for each pair of nodes. Finally, we provide the evaluation
+                     of our algorithms for both semantics which shows that matrix-based CFPQ implementation
+                     for Redis-Graph database is performant enough for real-world data analysis.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3398682.3399164">ELite: Cost-effective Approximation of Exploration-based Graph Analysis</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Xiaofei Zhang</li>
+               <li class="nameList">M. Tamer Özsu</li>
+               <li class="nameList Last">Lei Chen</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Vertex-centric block synchronous processing systems, exemplified by Pregel and Giraph,
+                     have received extensive attention for graph processing. These systems allow programmers
+                     to think only about operations that take place at one vertex and provide the underlying
+                     computation framework that involves multiple iterations (supersteps) with communication
+                     between neighboring vertices between supersteps. As graphs grow in size to billions
+                     of vertices and trillions of edges, processing them in this model face challenges:
+                     (1) The poor latency of supersteps dominated by the tasks performed on high degree
+                     vertices or densely connected components; and (2) The overwhelming network communication
+                     among vertices that can be proved of high redundancy. For many applications, approximate
+                     results are acceptable, and if these can be computed rapidly, they may be preferable.
+                     Many of the existing approximate solutions suffer from algorithm-specific designs
+                     that are not generic or lacking theoretical guarantees on the results' quality. In
+                     this paper we tackle this problem using a generic approach that can be incorporated
+                     into the graph processing platform. The approach we advocate involves communicating
+                     vertex states to a subset of the neighbors at each superstep; this is called selective
+                     edge lookup. We show how this approach can be incorporated into two primitive graph
+                     operators: BFS and DFS, which can be the basis of many graph analysis workloads. Extensive
+                     experiments over real-world and synthetic graphs validate the effectiveness and efficiency
+                     of the selective edge lookup approach.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3398682.3400060">Graph Learning with Loss-Guided Training</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Eliav Buchnik</li>
+               <li class="nameList Last">Edith Cohen</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Classically, ML models trained with stochastic gradient descent (SGD) are designed
+                     to minimize the average loss per example and use a distribution of training examples
+                     that remains static in the course of training. Research in recent years demonstrated,
+                     empirically and theoretically, that significant acceleration is possible by methods
+                     that dynamically adjust the training distribution in the course of training so that
+                     training is more focused on examples with higher loss. We explore loss-guided training
+                     in a new domain of node embedding methods pioneered by DeepWalk. These methods work
+                     with implicit and large set of positive training examples that are generated using
+                     random walks on the input graph and therefore are not amenable for typical example
+                     selection methods. We propose computationally efficient methods that allow for loss-guided
+                     training in this framework. Our empirical evaluation on a rich collection of datasets
+                     shows significant acceleration over the baseline static methods, both in terms of
+                     total training performed and overall computation.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>SESSION: Short Papers</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3398682.3399165">Supporting Dynamic Graphs and Temporal Entity Deletions in the LDBC Social Network
+                  Benchmark's Data Generator</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Jack Waudby</li>
+               <li class="nameList">Benjamin A. Steer</li>
+               <li class="nameList">Arnau Prat-Pérez</li>
+               <li class="nameList Last">Gábor Szárnyas</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Many data processing pipelines operate on highly-connected data sets that can be efficiently
+                     modelled as graphs. These graphs are rarely static, but rather change rapidly and
+                     often exhibit dynamic, temporal, or streaming behaviour. During the last decade, numerous
+                     graph benchmarks have been proposed, which cover a significant portion of the features
+                     required in practical use cases. However, whilst these benchmarks often contain some
+                     update operations, none of them include complex deletions, which makes it challenging
+                     to test the performance of graph processing systems under such operations. To address
+                     this limitation, we have extended the LDBC Social Network Benchmark (SNB) by introducing
+                     lifespan attributes for the creation and deletion dates of its entities. We have defined
+                     constraints for selecting these dates from intervals that ensure that the graph always
+                     satisfies the cardinality constraints prescribed by the schema and other semantic
+                     constraints of the social network domain. We have implemented the proposed lifespans
+                     in the SNB generator.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3398682.3399166">Towards Interactive Pattern Search in Massive Graphs</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Tahsin Reza</li>
+               <li class="nameList">Matei Ripeanu</li>
+               <li class="nameList">Geoffrey Sanders</li>
+               <li class="nameList Last">Roger Pearce</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>We present the design overview of a pattern matching engine for labeled graphs that
+                     supports interactive search: the user, based on feedback received from the search
+                     system, repeatedly revises her search template until s/he is satisfied with the results.
+                     To this end, we have developed a distributed memory solution that supports human-in-the-loop
+                     processing. Our solution embraces a number of design principles to offer high-performance,
+                     scalability and efficiency: (i) fast parallel processing - we adopt a vertex parallel
+                     computation model; (ii) aggressive search space reduction - using lightweight routines,
+                     we identify and prune away the non-matching part of the graph early; (iii) redundant
+                     work elimination - a revised query is likely to share label(s) and/or substructure(s)
+                     with its predecessor(s); therefore, whenever possible, we avoid redundant computation
+                     by reusing (partial) match information from earlier searches. Our preliminary evaluation
+                     highlights the effectiveness of the proposed approach: using a 257 billion edge real-world
+                     webgraph, on a 128 node (4,608 cores) deployment, we demonstrate the advantage of
+                     our technique over a naive approach (that uses an exact matching solution to independently
+                     search the original query and each of its revisions).
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            <h2>DEMONSTRATION SESSION: Demonstration Papers</h2>
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3398682.3399167">A Framework for DSL-Based Query Classification Using Relational and Graph-Based Data
+                  Models</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Peter K. Schwab</li>
+               <li class="nameList">Maximilian S. Langohr</li>
+               <li class="nameList Last">Klaus Meyer-Wegener</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>In this paper, we demonstrate a framework for DSL-based SQL query classification according
+                     to data-privacy directives. Based on query-log analysis, this framework automatically
+                     derives query meta-information (QMI) and provides interfaces for browsing and filtering
+                     queries based on this QMI. Domain-specific policy rules enable automatic classification
+                     of queries concerning their access to personal data. The generic policy-rule definition
+                     based on the QMI covers many syntactical SQL variations. To optimize classification
+                     performance, our framework stores the QMI both in relational and graph-based databases
+                     (DBs).
+                  </p> 
+                  <p>This case study compares the behavior of a relational DB with that of a graph-based
+                     DB with respect to a particular task, namely searching for the policy rules applicable
+                     to a given query. It turned out that both solutions have their benefits, so a hybrid
+                     solution has been chosen in the end.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3398682.3399168">The Graph Based Benchmark Suite (GBBS)</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Laxman Dhulipala</li>
+               <li class="nameList">Jessica Shi</li>
+               <li class="nameList">Tom Tseng</li>
+               <li class="nameList">Guy E. Blelloch</li>
+               <li class="nameList Last">Julian Shun</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>In this demonstration paper, we present the Graph Based Benchmark Suite (GBBS), a
+                     suite of scalable, provably-efficient implementations of over 20 fundamental graph
+                     problems for shared-memory multicore machines. Our results are obtained using a graph
+                     processing interface written in C++, extending the Ligra interface with additional
+                     functional primitives that have clearly defined cost bounds. Our approach enables
+                     writing high-level codes that are simultaneously simple and high-performance by virtue
+                     of using highly-optimized primitives. Another benefit is that optimizations, such
+                     as graph compression, are implemented transparently to high-level user code, and can
+                     thus be utilized without changing the implementation. Our approach enables our codes
+                     to scale to the largest publicly-available real-world graph containing over 200 billion
+                     edges on a single multicore machine.
+                  </p> 
+                  <p>We show how to use GBBS to process and perform a variety of tasks on real-world graphs.
+                     We present the high-level C++ APIs that enable us to write concise, high-performance
+                     implementations. We also introduce a Python interface to GBBS, which lets users easily
+                     prototype algorithms and pipelines in Python that significantly outperform NetworkX,
+                     a mature Python-based graph processing solution.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+         </div>
+      </div>
+   </body>
+</html>
