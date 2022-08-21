@@ -19,6 +19,10 @@ time, mark, audio, video {
   background: transparent;
 }
 
+.ppt {
+	border-bottom: 0px !important;
+}
+
 html, body {
   font-size: 100%;
 }
