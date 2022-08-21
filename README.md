@@ -1,1 +1,1 @@
-# sea-probability-memories.github.io
+# waves-probability-memories.github.io
