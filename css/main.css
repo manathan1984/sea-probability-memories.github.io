@@ -19,8 +19,18 @@ time, mark, audio, video {
   background: transparent;
 }
 
+
+/* edits by manos */
 .ppt {
 	border-bottom: 0px !important;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0em;
+}
+
+.space-above {
+  margin-top: 3em;
 }
 
 html, body {
@@ -407,7 +417,8 @@ header #title-container {
   color: #655b19;
   font-weight: bold;
   font-size: 30px;
-  text-align: left;
+  text-align: center;
+  /* text-align: left; */
 }
 @media screen and (max-width: 540px) {
   header #title-container {
@@ -416,6 +427,7 @@ header #title-container {
     margin-right: 7.4229703521%;
     width: 100%;
     font-size: 20px;
+    
   }
   header #title-container:last-child {
     margin-right: 0;
@@ -433,7 +445,8 @@ header #subtitle-container {
   padding-top: 0.5em;
   color: #366519;
   font-size: 25px;
-  text-align: left;
+  text-align: center;
+  /* text-align: left; */
 }
 header a {
   color: #655b19;
@@ -576,11 +589,21 @@ header nav ul li a.bordered {
 }
 #content section.row h2 {
   text-transform: uppercase;
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: bold;
   color: #655b19;
   margin-bottom: 0.5em;
 }
+
+#content section.row h3 {
+  /* text-transform: uppercase; */
+  font-size: 1em;
+  font-weight: bold;
+  color: #764f15;
+  margin-bottom: 0em;
+}
+
+
 #content section.row p {
   font-size: 1.2em;
   line-height: 1.6em;
